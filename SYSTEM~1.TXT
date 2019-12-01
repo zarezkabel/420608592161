@@ -1,0 +1,16 @@
+fs_type=ext4
+system_size=3221225472
+userdata_size=4294967296
+cache_fs_type=ext4
+cache_size=268435456
+oem_size=67108864
+apps_size=314572800
+extfs_sparse_flag=-s
+selinux_fc=out/target/product/bbk6750_66_m/root/file_contexts
+boot_signer=true
+verity=true
+verity_key=build/target/product/security/verity
+verity_signer_cmd=out/host/linux-x86/bin/verity_signer
+system_verity_block_device=/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/system
+oem_verity_block_device=/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/cust
+skip_fsck=true
